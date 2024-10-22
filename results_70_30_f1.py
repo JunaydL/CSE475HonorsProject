@@ -1,5 +1,5 @@
 #Student: Junayd Lateef (ASU ID: 1221505571)
-# create plot (used to splot out the corelations in )
+# create plot 
 import matplotlib.pyplot as plt 
 import numpy as np 
 
@@ -10,13 +10,13 @@ f1scores = [0.8490972979522597, 0.8387008547008546, 0.8490972979522597, 0.874155
 # Create bar chart
 plt.bar(cats, f1scores)
 
-# Add labels and title
+# Add labels and title and create the graph
 plt.xlabel('Trials')
 plt.ylabel('F1 Scores')
 plt.yticks([.83, .84, .85, .86, .87, .88])
 plt.ylim(0.83, 0.88)
 plt.title('F1 Scores based on each Trial (70-30)')
 
-#Save the chart appropriately
+#Save the chart 
 plt.tight_layout()  
 plt.savefig('./70_30_resultcharts/70_30_f1scores.png')
